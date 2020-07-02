@@ -42,7 +42,24 @@
 				);
 			};
 			// repeat the above for replaceState too
-		})(); this.remove();</script></head>
+		})(); this.remove();
+		const countEl = document.getElementById('count');
+
+	updateVisitCount();
+
+	function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/abdallah_resume/syed/?amount=0.5')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}
+
+
+
+
+
+		</script></head>
 <body>
 <!-----Header section---->
 <section id="header">
@@ -368,7 +385,10 @@ appliance can be controlled without any up-gradation.<br>
 </div>
 
 <div class="footer text-center">
-<p> Updated on 16/6/2020 </p>
-</div>
+<p> Updated on 16/6/2020   </p>
+<p style="background-color:black;"> Visitors</p>
+<h1 id="count" style="background-color:black;">0</h1>
+
+ </div>
 </div>
 </section></body></html>
