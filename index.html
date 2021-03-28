@@ -44,6 +44,22 @@
 			// repeat the above for replaceState too
 		})(); this.remove();
 		
+	const countEl = document.getElementById('count');
+
+	updateVisitCount();
+
+	function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/abdallah_resume/syed/?amount=0.5')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}
+
+
+
+
+
 		</script></head>
 <body>
 <!-----Header section---->
@@ -98,10 +114,11 @@
 
 <h3> ABOUT Abdallah </h3>
 <p>
-Pursuing fourth/last year Bachelors of Engineering in Information Technology at Muffakham Jah College of Engineering & Technology.
- I like to explore all kind of domains, languages irrespective of anything, while discovering and working in some projects I find my interest in automation domain.
- I have recently worked with selenium web driver for automation while doing my hobby project.And currently I am learning android application testing with appium, i am beginner and as a fresher it drives me to do this job but i don't belive in restricting 
- ones to any kind of field as it cut down my opportunities to learn and explore new things. I find my self adaptable to any kind of situation depending upon the need of time.
+Pursuing Fourth/last year Bachelors of Engineering in Information Technology at Muffakham Jah College of Engineering & Technology.
+ I like to explore all kind of domains, languages irrespective of anything, while discovering and working in some projects I find my interest in Software Development & Automation domain.
+ I have recently worked with selenium web driver for automation while doing my hobby project and Freelancing Projects.
+ I am beginner and as a fresher it drives me to do this job but I don't belive in restricting ones to any kind of
+ field as it cut down my opportunities to learn and explore new things. I find my self adaptable to any kind of situation depending upon the need of time.
  
 
 <br>
@@ -113,7 +130,7 @@ That's not giving you a lot of detail, is it?<br>
 <div class="skills-bar">
 <p> Goal Oriented </p>
 <div class="progress">
-<div class="progress-bar" style="width: 85%;">85%</div>
+<div class="progress-bar" style="width: 90%;">90%</div>
 </div>
 
 <p> Future Focused </p>
@@ -123,7 +140,7 @@ That's not giving you a lot of detail, is it?<br>
 
 <p> Critical Thinking </p>
 <div class="progress">
-<div class="progress-bar" style="width: 75%;">75%</div>
+<div class="progress-bar" style="width: 80%;">80%</div>
 </div>
 
 <p> Time Management </p>
@@ -133,7 +150,7 @@ That's not giving you a lot of detail, is it?<br>
 
 <p> Verbal and written communication </p>
 <div class="progress">
-<div class="progress-bar" style="width: 75%;">75%</div>
+<div class="progress-bar" style="width: 85%;">85%</div>
 </div>
 
 </div>
@@ -174,7 +191,7 @@ JavaScript
 <li>
 <h4><span>Other Skills:</span></h4>
 <p>
-Microsoft Office, Photoshop, Arduino,Raspberry Pi, AutoCAD
+Selenium WebDriver, Microsoft Office, Photoshop, Arduino,Raspberry Pi.
 </p>
 </li>
 
@@ -185,11 +202,11 @@ Microsoft Office, Photoshop, Arduino,Raspberry Pi, AutoCAD
 </div>
 
 <!---------social icon------>
-
+<a name="res"></a>
 <div class="social">
 <ul>
 <a href="mailto:abdallahsyed11@gmail.com? subject=subject text"><li><i class="fa fa-envelope"></i></li></a>
-<a href="https://github.com/"><li><i class="fa fa-github"></i></li></a>
+<a href="https://github.com/SyedAbdallah"><li><i class="fa fa-github"></i></li></a>
 <a href="https://www.linkedin.com/in/syed-abdallah/"><li><i class="fa fa-linkedin"></i></li></a>
 <a href="tel:+91 9160855396"><li><i class="fa fa-phone"></i></li></a>
 </ul>
@@ -209,8 +226,8 @@ Microsoft Office, Photoshop, Arduino,Raspberry Pi, AutoCAD
 <li>
 <h4><span>Company Name:</span> IEEE MJCET </h4>
 <p>
-<b>Position:</b> Designer <br>
-<b>Duration:</b> May 2019 - Aug 2019<br>
+<b>Position:</b> Junior ExeCom-Designer <br>
+<b>Duration:</b> 2019-2020 <br>
 <b>Location:</b> Hyderabad, India
 </p>
 </li>
@@ -220,7 +237,7 @@ Microsoft Office, Photoshop, Arduino,Raspberry Pi, AutoCAD
 <h4><span>Company Name:</span> Internshala</h4>
 <p>
 <b>Position:</b> Internshala Student Partner 9.0 <br>
-<b>Duration:</b> 6 months<br>
+<b>Duration:</b> Feb 2018 - July 2018 <br>
 <b>Location:</b> Hyderabad, India
 </p>
 </li>
@@ -235,7 +252,7 @@ Microsoft Office, Photoshop, Arduino,Raspberry Pi, AutoCAD
 <p>
 <b>Stream:</b>  Information Technology <br>
 <b>Institute:</b> Muffakham Jah COllege of Engineering and Technology <br>
-<b>Aggregate:</b> 8.11 CGPA <br>
+<b>Aggregate:</b> 8.26 CGPA <br>
 </p>
 </li>
 
@@ -362,19 +379,20 @@ appliance can be controlled without any up-gradation.<br>
 <p>syed-abdallah</p>
 </div>
 </div>
-<!-- 
-<button type="button"  class="btn btn-primary "><i class="fa fa-download"></i>Resume</button>
+<!-- -->
+<button type="button" onclick="location.href = 'https://drive.google.com/file/d/1kgr1pOlkvqLKPPhBndnSQNRclGAkKYu2/view?usp=sharing';"  class="btn btn-primary "><i class="fa fa-download"></i>Resume</button>
 
-<button type="button"  class="btn btn-primary"><i class="fa fa-rocket"></i>Hire ME</button> -->
+<button type="button" onclick="location.href='mailto:abdallahsyed11@gmail.com?subject= Hire Me From Your Website - syedabdallah.000webhostapp.com';" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire ME</button> 
+
 
 </div>
 
 <div class="footer text-center">
 <p> Updated on 01/01/2021   </p>
   <p style="background-color:black;"> 
- <a href='https://www.counters-free.net/' style="background-color:powderblue;" >Counters-Free</a> 
+   <a href='https://www.counters-free.net/' style="background-color:black; color: black;"  >Counters-Free</a> 
  <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=3f96b0c913d40399a1315ab86587604de9b4cfaf'></script>
 <script type="text/javascript" src="https://freevisitorcounters.com/en/home/counter/806099/t/2"></script>   </p>
-</div>
+ </div>
 </div>
 </section></body></html>
